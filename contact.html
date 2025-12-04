@@ -3,386 +3,257 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Mahant interior - Wooden And UPVC Furniture</title>
+    <title>MAHANT INTERIOR - Transforming Spaces</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free Website Template" name="keywords">
-    <meta content="Free Website Template" name="description">
+    <meta content="Interior Design, UPVC Furniture, POP Work, Home Decor" name="keywords">
+    <meta content="Mahant Interior offers professional and high-quality interior design and UPVC furniture solutions." name="description">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
-    <!-- Flaticon Font -->
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-
-    <!-- Modern Custom CSS -->
     <style>
+        /* New Custom Colors */
+        :root {
+            --primary: #CD9B4A; /* Gold/Bronze (Professional Accent) */
+            --secondary: #333333; /* Deep Charcoal (Header/Footer Background) */
+            --light: #f8f9fa; /* Light background used in sections */
+            --dark: #212529;
+            --white: #ffffff;
+        }
+
+        /* Global Typography and Background */
         body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            margin: 0;
-            padding: 0;
-            color: #333;
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--white) !important;
+            color: var(--dark);
         }
 
-        /* Topbar Styles */
-        .bg-secondary {
-            background: linear-gradient(90deg, #343a40 0%, #495057 100%) !important;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        /* Color Utility Overrides */
+        .text-primary {
+            color: var(--primary) !important;
         }
-
-        .text-white {
-            color: #fff !important;
-        }
-
-        .d-inline-flex.align-items-center p {
-            font-weight: 500;
-        }
-
-        .d-inline-flex.align-items-center a {
-            transition: all 0.3s ease;
-        }
-
-            .d-inline-flex.align-items-center a:hover {
-                transform: scale(1.1);
-                color: #ff6b6b !important;
-            }
-
-        /* Navbar Brand */
-        .navbar-brand h1 {
-            font-size: 2.5rem;
-            font-weight: bold;
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-        }
-
-        .navbar-brand .text-primary {
-            color: #ff6b6b !important;
-        }
-
-        /* Navbar */
-        .navbar {
-            background: rgba(0, 0, 0, 0.9);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-        }
-
-        .navbar-nav .nav-link {
-            color: #fff !important;
-            font-weight: 500;
-            padding: 10px 20px;
-            margin: 0 10px;
-            border-radius: 25px;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-            .navbar-nav .nav-link::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: -100%;
-                width: 100%;
-                height: 100%;
-                background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-                transition: left 0.5s;
-            }
-
-            .navbar-nav .nav-link:hover::before {
-                left: 100%;
-            }
-
-            .navbar-nav .nav-link:hover {
-                background: rgba(255, 255, 255, 0.1);
-                box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 255, 255, 0.3), 0 0 60px rgba(255, 255, 255, 0.1);
-                transform: scale(1.05);
-            }
-
-            .navbar-nav .nav-link.active {
-                background: rgba(255, 107, 107, 0.8);
-                box-shadow: 0 0 20px rgba(255, 107, 107, 0.5), 0 0 40px rgba(255, 107, 107, 0.3), 0 0 60px rgba(255, 107, 107, 0.1);
-            }
-
-        .navbar-toggler {
-            border: none;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 5px;
-        }
-
-        .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-        }
-
-        /* Contact Section */
-        .container-fluid.pt-5 {
-            padding-top: 5rem;
-        }
-
-        .d-flex.flex-column.text-center.mb-5 h5 {
-            font-size: 1.2rem;
-            color: #ff6b6b;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .d-flex.flex-column.text-center.mb-5 h1 {
-            font-size: 3rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .contact-form {
-            background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            margin-top: 2rem;
-        }
-
-        .form-control {
-            border: 2px solid #ddd;
-            border-radius: 10px;
-            padding: 1rem;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-        }
-
-            .form-control:focus {
-                border-color: #ff6b6b;
-                box-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
-            }
 
         .btn-primary {
-            background: linear-gradient(90deg, #ff6b6b 0%, #ffa726 100%);
-            border: none;
-            padding: 1rem 2rem;
-            font-size: 1.1rem;
-            font-weight: bold;
-            border-radius: 25px;
+            color: var(--white);
+            background-color: var(--primary);
+            border-color: var(--primary);
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
         }
 
             .btn-primary:hover {
-                background: linear-gradient(90deg, #ffa726 0%, #ff6b6b 100%);
-                transform: translateY(-3px);
-                box-shadow: 0 0 20px rgba(255, 107, 107, 0.8), 0 0 40px rgba(255, 107, 107, 0.6), 0 0 60px rgba(255, 107, 107, 0.4);
+                color: var(--white);
+                background-color: #B58438; /* Slightly darker gold on hover */
+                border-color: #B58438;
             }
+
+        .btn-lg {
+            padding: 0.8rem 2rem;
+            font-size: 1.1rem;
+        }
+
+        .bg-secondary {
+            background-color: var(--secondary) !important;
+        }
+
+        /* Topbar & Header Styling */
+        .row.bg-secondary {
+            background: var(--secondary) !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .navbar-brand h1 {
+            font-weight: 700;
+            font-style: normal;
+            font-size: 1.5rem;
+            margin: 0 !important;
+        }
+
+        /* Main Navigation */
+        .navbar {
+            padding: .5rem 1rem;
+        }
+
+        .navbar-nav .nav-link {
+            color: var(--dark) !important;
+            font-weight: 500;
+            margin: 0 10px;
+            padding: 15px 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+        }
+
+            .navbar-nav .nav-link::after {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 2px;
+                display: block;
+                margin-top: 5px;
+                right: 0;
+                background: var(--primary);
+                transition: width 0.3s ease;
+            }
+
+            .navbar-nav .nav-link:hover::after,
+            .navbar-nav .nav-link.active::after {
+                width: 100%;
+                left: 0;
+                background: var(--primary);
+            }
+
+        /* IMAGE DESIGN CHANGES FOR REFERENCE SITE LOOK */
+
+        /* 1. Carousel Full Height & Image Styling */
+        .container-fluid.p-0.nav-bar {
+            /* Ensure nav bar sits on top of carousel content if possible, or stays fixed */
+            position: absolute;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .container-fluid.p-0:not(.nav-bar) { /* Target the carousel container */
+            margin-top: 0 !important; /* Remove top margin that pushed the carousel down */
+        }
+
+        #blog-carousel .carousel-item {
+            height: 100vh; /* Set hero section to full screen height */
+        }
+
+            #blog-carousel .carousel-item img {
+                height: 100%;
+                object-fit: cover;
+            }
+
+        /* 2. Dark Overlay for High Contrast Text */
+        #blog-carousel .carousel-caption {
+            background: rgba(0, 0, 0, 0.4); /* Subtle dark overlay for contrast */
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+
+            /* 3. Refined Typography */
+            #blog-carousel .carousel-caption h4 {
+                font-size: 1.5rem;
+                font-weight: 400;
+                letter-spacing: 2px;
+                text-transform: uppercase; /* Match modern reference style */
+            }
+
+            #blog-carousel .carousel-caption .display-4 {
+                font-size: 3.5rem; /* Slightly larger heading */
+                font-weight: 700;
+                line-height: 1.2;
+                text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for text pop */
+            }
+
+        /* Service Cards */
+        .card-body.bg-secondary {
+            background-color: var(--primary) !important;
+            border-radius: 0 0 0 0;
+        }
 
         /* Footer */
-        .container-fluid.bg-secondary.text-white {
-            background: linear-gradient(135deg, #343a40 0%, #495057 100%);
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-        }
-
-        .display-5 {
-            font-size: 2.5rem;
-            font-weight: bold;
-        }
-
-        .text-primary {
-            color: #ff6b6b !important;
-        }
-
-        .btn-outline-light {
-            border: 2px solid #fff;
-            transition: all 0.3s ease;
-        }
-
-            .btn-outline-light:hover {
-                background: #ff6b6b;
-                border-color: #ff6b6b;
-                transform: scale(1.1);
-                box-shadow: 0 0 15px rgba(255, 107, 107, 0.5);
-            }
-
-        /* Back to Top */
-        .back-to-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: linear-gradient(90deg, #ff6b6b 0%, #ffa726 100%);
-            border: none;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
-        }
-
-            .back-to-top:hover {
-                transform: scale(1.1);
-                box-shadow: 0 0 20px rgba(255, 107, 107, 0.8), 0 0 40px rgba(255, 107, 107, 0.6);
-            }
-
-        /* Responsive Adjustments */
-        @media (max-width: 991px) {
-            .navbar-nav .nav-link {
-                margin: 5px 0;
-            }
-
-            .d-flex.flex-column.text-center.mb-5 h1 {
-                font-size: 2rem;
-            }
-
-            .contact-form {
-                padding: 1rem;
-            }
+        .footer .text-primary {
+            color: var(--primary) !important;
         }
     </style>
 </head>
 
-<body class="bg-white">
-    <!-- Topbar Start -->
-    <div class="container-fluid">
-        <div class="row bg-secondary py-2 px-lg-5">
-            <div class="col-lg-6 text-center text-lg-left">
-                <div class="d-inline-flex align-items-center">
-                    <p class="mr-2 mb-2 mb-lg-0 text-white">Opening Hours:</p>
-                    <span class="mb-2 mb-lg-0 text-white">8.00AM - 10.00PM</span>
-                </div>
-            </div>
-            <div class="col-lg-6 text-center text-lg-right">
-                <div class="d-inline-flex align-items-center">
-                    <p class="m-0 mr-1 text-white">Follow Us:</p>
-                    <a class="text-white px-2" href="">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a class="text-white px-2" href="">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a class="text-white px-2" href="">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a class="text-white px-2" href="">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a class="text-white px-2" href="">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="row py-3 px-lg-5">
-            <div class="col-lg-4">
-                <a href="" class="navbar-brand d-none d-lg-block">
-                    <h1 class="m-0 display-5 text-capitalize font-italic"><span class="text-primary">MAHANT</span> INTERIOR</h1>
-                </a>
-            </div>
-            <div class="col-lg-8 text-center text-lg-right">
-                <div class="d-inline-flex align-items-center">
-                    <div class="d-inline-flex flex-column text-center pr-3 border-right">
-                        <h6>Our Office</h6>
-                        <p class="m-0">Mahant Interior Tragad, ahmedabad</p>
-                    </div>
-                    <div class="d-inline-flex flex-column text-center px-3 border-right">
-                        <h6>Email Us</h6>
-                        <p class="m-0">info@mahantinterior.com</p>
-                    </div>
-                    <div class="d-inline-flex flex-column text-center pl-3">
-                        <h6>Call Us</h6>
-                        <p class="m-0">+91 70694 20487</p>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
-    <!-- Topbar End -->
-    <!-- Navbar Start -->
-    <div class="container-fluid p-0 mb-5">
-        <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-0">
-            <a href="" class="navbar-brand d-block d-lg-none">
-                <h1 class="m-0 display-5 text-capitalize font-italic text-white">
-                    <span class="text-primary">Safety</span>First
-                </h1>
-            </a>
+<div class="container-fluid p-0 nav-bar">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 border-bottom shadow-sm">
 
-            <!-- Modern Toggler Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">
-                    <div></div>
-                </span>
-            </button>
+        <a href="index.html" class="navbar-brand d-flex align-items-center py-2 px-3">
+            <img src="IMG_4645.png" alt="" style="height:40px; width:auto; margin-right:5px;">
+            <h1 class="m-0 display-5 text-capitalize text-dark">
+                <span class="text-primary">MAHANT</span> INTERIOR
+            </h1>
+        </a>
 
-            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav m-auto py-4">
-                    <a href="index.html" class="nav-item nav-link ">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="service.html" class="nav-item nav-link">Services</a>
-                    <a href="contact.html" class="nav-item nav-link active">Contact</a>
-                </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav py-4 py-lg-0 mx-auto">
+                <a href="index.html" class="nav-item nav-link  text-dark">Home</a>
+                <a href="about.html" class="nav-item nav-link text-dark">About</a>
+                <a href="service.html" class="nav-item nav-link text-dark">Services</a>
+                <a href="contact.html" class="nav-item nav-link active text-dark">Contact</a>
             </div>
-        </nav>
-    </div>
-    <!-- Navbar End -->
-    <!-- Contact Start -->
-    <div class="container-fluid pt-5">
-        <div class="d-flex flex-column text-center mb-5">
-            <h5 class="text-primary mb-3">Contact Us</h5>
-            <h1 class="m-0">
-                Contact For Any Query
-
-                <h5 class="text-primary mb-3">Kiran Patel +91 70694 20487</h5>
+            <a href="contact.html" class="btn btn-primary d-none d-lg-block">Get a Quote <i class="fa fa-arrow-right ml-2"></i></a>
         </div>
-        <div class="row">
-            <div class="col-12 p-0">
-                <iframe style="width: 100%; height: 500px;" src="https://www.google.com/maps/place/MAHANT+INTERIOR+ZUNDAL/@23.134177,72.5693386,942m/data=!3m2!1e3!4b1!4m6!3m5!1s0x395e830900ab4bcf:0x34c3bf0833cfe1d9!8m2!3d23.1341721!4d72.5719189!16s%2Fg%2F11lypkhpyx?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" frameborder="1" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
-            <div class="col-12">
-                <div class="contact-form bg-white">
-                    <div id="success"></div>
-                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                        <div class="control-group">
-                            <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <textarea class="form-control" rows="6" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div>
-                            <button class="btn btn-primary" type="submit" id="sendMessageButton">Send Message</button>
-                        </div>
-                    </form>
-                </div>
+    </nav>
+</div>
+<!-- Navbar End -->
+<!-- Contact Start -->
+<div class="container-fluid pt-5">
+    <div class="d-flex flex-column text-center mb-5">
+        <h5 class="text-primary mb-3"></h5>
+        <h5 class="text-primary mb-3"></h5>
+        <h5 class="text-primary mb-3">Contact Us</h5>
+        <h1 class="m-0">
+            Contact For Any Query
+
+            <h5 class="text-primary mb-3">Kiran Patel +91 70694 20487</h5>
+    </div>
+    <div class="row">
+        <div class="col-12 p-0">
+            <iframe style="width: 100%; height: 500px;" src="https://www.google.com/maps/place/MAHANT+INTERIOR+ZUNDAL/@23.134177,72.5693386,942m/data=!3m2!1e3!4b1!4m6!3m5!1s0x395e830900ab4bcf:0x34c3bf0833cfe1d9!8m2!3d23.1341721!4d72.5719189!16s%2Fg%2F11lypkhpyx?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" frameborder="1" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="col-12">
+            <div class="contact-form bg-white">
+                <div id="success"></div>
+                <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                    <div class="control-group">
+                        <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="control-group">
+                        <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="control-group">
+                        <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="control-group">
+                        <textarea class="form-control" rows="6" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary" type="submit" id="sendMessageButton">Send Message</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-    <!-- Contact End -->
-    <!-- Footer Start -->
-    <div class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5">
-        <div class="row pt-5">
-            <div class="col-lg-4 col-md-12 mb-5">
-                <h1 class="display-5 text-primary">KIRAN PATEL</h1>
-                <p class="m-0">OWNER-Mahant Interior</p>
-            </div>
-            <div class="col-lg-8 col-md-12">
-                <div class="row">
-                    <div class="col-md-4 mb-5">
-                        <h5 class="text-primary mb-4">Quick Links</h5>
-                        <div class="d-flex flex-column justify-content-start">
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Services</a>
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Team</a>
-                            <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact
+</div>
+<!-- Contact End -->
+<!-- Footer Start -->
+<div class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5">
+    <div class="row pt-5">
+        <div class="col-lg-4 col-md-12 mb-5">
+            <h1 class="display-5 text-primary">KIRAN PATEL</h1>
+            <p class="m-0">OWNER-Mahant Interior</p>
+        </div>
+        <div class="col-lg-8 col-md-12">
+            <div class="row">
+                <div class="col-md-4 mb-5">
+                    <h5 class="text-primary mb-4">Quick Links</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Services</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Team</a>
+                        <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact
